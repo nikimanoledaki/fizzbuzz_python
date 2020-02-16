@@ -5,7 +5,7 @@ class FizzBuzzError(Exception):
 
 class FizzBuzz:
     """A fizzbuzz-ifying programme."""
-     
+
     def run(self, number):
         self._check_operand(number)
         result = []

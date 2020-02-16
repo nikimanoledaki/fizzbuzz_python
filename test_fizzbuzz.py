@@ -1,5 +1,5 @@
+from fizzbuzz import *
 import pytest
-from fizzbuzz import FizzBuzz, FizzBuzzError
 
 def test_should_return_an_array():
     fizzbuzz = FizzBuzz()
