@@ -5,6 +5,9 @@ class FizzBuzz:
         result = []
         x = range(1, number + 1)
         for n in x:
-            result.append(n)
+            if n % 3 == 0:
+                result.append('Fizz')
+            else:
+                result.append(n)
 
         return result
