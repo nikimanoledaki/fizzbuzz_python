@@ -1,4 +1,5 @@
-from fizzbuzz import FizzBuzz
+import pytest
+from fizzbuzz import FizzBuzz, FizzBuzzError
 
 def test_should_return_an_array():
     fizzbuzz = FizzBuzz()
@@ -29,3 +30,9 @@ def test_should_fizzbuzz_for_multiples_of_15():
 
     result = fizzbuzz.run(15)
     assert result == [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+
+def test_raise_exceptions():
+    fizzbuzz = FizzBuzz()
+
+    with pytest.raises(FizzBuzzError):
+        result = fizzbuzz.run("one")
