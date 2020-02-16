@@ -17,3 +17,9 @@ def test_should_fizz_for_multiples_of_3():
 
     result = fizzbuzz.run(3)
     assert result == [1, 2, 'Fizz']
+
+def test_should_buzz_for_multiples_of_5():
+    fizzbuzz = FizzBuzz()
+
+    result = fizzbuzz.run(5)
+    assert result == [1, 2, 'Fizz', 4, 'Buzz']
